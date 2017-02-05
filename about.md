@@ -12,7 +12,8 @@ and always trying to improve my own skills.</p>
 and for that I'm always trying to improve my communication and interpersonal skills.
 </p>
 <p>
-Other than my geek life, I enjoy spending time with family, with my dog(s), trying to teach coding to young people and so on.
+Other than my geek life, I enjoy spending time with family, with my dog(s), trying to teach coding to young people and... And what??? I still didn't find a way to have 48hrr day :-)</p>
+<p>
 I like sports and motorbike (I'm italian so you can understand my love for Ducati), I'm vegeterian and interested on using the technologies to live better.
 </p>
 <p>
