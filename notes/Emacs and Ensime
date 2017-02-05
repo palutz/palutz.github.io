@@ -1,0 +1,9 @@
+# Install Emacs and Ensime on Ubuntu
+
+In Linux (Ubuntu or Mint in this case) installing Emacs is pretty easy.  
+To do so we just need to run some simple commands on the console:  
+  
+    $ sudo apt-get update  
+    $ sudo apt-get install emacs emacs24-el  
+
+Just confirm and you should see all the 

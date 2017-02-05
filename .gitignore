@@ -1,0 +1,8 @@
+_site/
+.sass-cache/
+node_modules/
+.bundle/
+tmp/
+
+.jekyll-metadata
+*.swp

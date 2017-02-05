@@ -1,0 +1,9 @@
+# humanstxt.org/
+
+# TEAM
+
+	Stefano Paluello - index.html
+
+# TECHNOLOGY
+
+	HTML5, CSS3, JS, JEKYLL
