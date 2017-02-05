@@ -7,10 +7,10 @@ permalink: /about/index.html
 
 <p>I'm an Italian curious geek, polyglot developer, Agile practitioner, eager to learn new things, 
 and always trying to improve my own skills.
-
+</br>
 I like to deal with different people, different ideas and trying to get the best from
 any situations.
-
+</br>
 I believe in the "right tool for the right job" so I prefer to learn and use different technologies than stick with only one.
 </p>
 </br>
