@@ -15,28 +15,29 @@ I believe in the "right tool for the right job" so I prefer to learn and use dif
 I like the Agile principles and I believe in a strong and good team to achieve the best results, 
 and for that I'm always trying to improve my communication and interpersonal skills.</p>
 
-<h2>Skills</h2>
-
+<h2>Skills (and interestes...)</h2>
+<h5>PS: this list is always "under construction... " ;-) </h5>
+<p>  </p>
+<p>  </p>
 <ul class="skill-list">
-	<li>Functional Languages (F#, Scala, a bit of Haskell</li>
-	<li>C#</li>
-	<li>API design</li>
+	<li>Functional Languages (F#, Scala, Haskell, ...)</li>
 	<li>Blockchain, Bitcoin, cryptography</li>
 	<li>Decentralized Applications</li>
+    <li>API design</li>
+    <li>C# .Net (specially the open source version)</li>
 	<li>Scalable and distributed system</li>
 	<li>Architecture, Web and Cloud</li>
-	<li>Machine Learning and Artificial Intelligence</li>
-	<li>NodeJS</li>
-	<li>Git</li>
-	<li>Python</li>
-	<li>Ruby, Ruby on Rails, Sinatra</li>
-	<li>PostgreSql, SQL Server</li>
-	<li>MongoDB, HBase, Hadoop</li>
-	<li>TDD e Continuous Integration</li>
-	<li>BDD, Functional and Integration Test</li>
+    <li>Git, distributed VCS, Team Working</li>
+    <li>Machine Learning and Artificial Intelligence</li>
+	<li>NodeJS, Python, Ruby on Rails, Sinatra</li>
+	<li>SQL Databases (PostgreSql, SQL Server, ... )</li>
+	<li>NoSql Databases (MongoDB, HBase, GraphDB, ... )</li>
+    <li>Streaming data ... </li>
+	<li> e Continuous Integration</li>
+	<li>TDD, BDD, Functional and Integration Test</li>
 </ul>
 
-<h2>Projects</h2>
+<h3>Some references</h3>
 
 <ul>
 	<li><a href="https://github.com/palutz">My github page</a></li>
