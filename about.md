@@ -7,13 +7,13 @@ permalink: /about/index.html
 
 <p>I'm an Italian curious geek, polyglot developer, Agile practitioner, eager to learn new things, 
 and always trying to improve my own skills.</p>
-<p>I like to deal with different people, different ideas and trying to get the best from
-any situations</p>
-<p>I believe in the "right tool for the right job" so I prefer to learn and use different technologies than stick with only one.
+<p>I believe in the "right tool for the right job" so I prefer to learn and use different technologies than stick with only one.</p>
+<p>I like the Agile principles and I believe in a strong and good team to achieve the best results, 
+and for that I'm always trying to improve my communication and interpersonal skills.
 </p>
 <p>
-I like the Agile principles and I believe in a strong and good team to achieve the best results, 
-and for that I'm always trying to improve my communication and interpersonal skills.
+Other than my geek life, I enjoy spending time with family, with my dog(s), trying to teach coding to young people and so on.
+I like sports and motorbike (I'm italian so you can understand my love for Ducati), I'm vegeterian and interested on using the technologies to live better.
 </p>
 <p>
 <h2>Skills (and interestes...)</h2>
