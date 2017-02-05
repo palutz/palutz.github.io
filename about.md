@@ -11,17 +11,15 @@ and always trying to improve my own skills.</p>
 any situations</p>
 <p>I believe in the "right tool for the right job" so I prefer to learn and use different technologies than stick with only one.
 </p>
-</br>
 <p>
 I like the Agile principles and I believe in a strong and good team to achieve the best results, 
 and for that I'm always trying to improve my communication and interpersonal skills.
 </p>
-<br>
-</br>
+<p>
 <h2>Skills (and interestes...)</h2>
 <h5>PS: this list is always "under construction... " ;-) </h5>
-<p>  </p>
-<p>  </p>
+</p>
+<p>
 <ul class="skill-list">
 	<li>Functional Languages (F#, Scala, Haskell, ...)</li>
 	<li>Blockchain, Bitcoin, cryptography</li>
@@ -38,7 +36,8 @@ and for that I'm always trying to improve my communication and interpersonal ski
 	<li>Streaming data ... </li>
 	<li>TDD, BDD... Tests</li>
 </ul>
-
+</p>
+<p>
 <h3>Some references</h3>
 
 <ul>
@@ -46,3 +45,4 @@ and for that I'm always trying to improve my communication and interpersonal ski
 	<li><a href="http://www.pastesoft.com">Pastesoft, my own laboratory</a></li>
 	<li><a href="https://github.com/pastesoft">Pastesoft github page</a></li>
 </ul>
+<p>
