@@ -85,9 +85,9 @@ postContext =
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
   FeedConfiguration
-    { feedTitle = "Dr. Hakyll's Blog"
-    , feedDescription = "Dr. Hakyll's blog"
-    , feedAuthorName = "Dr. Hakyll"
-    , feedAuthorEmail = "dr-hakyll@dr-hakyll.com"
+    { feedTitle = "Free thoughts on a leash..."
+    , feedDescription = "Palutz's blog"
+    , feedAuthorName = "Palutz"
+    , feedAuthorEmail = "stefano@pastesoft.com"
     , feedRoot = ""
     }
