@@ -1,14 +1,10 @@
 ---
 title: About me
 ---
-
-## ***About me***
-
-<p>First of all, thank you for stopping by and welcome to my little website/blog.</p>
-&nbsp;  
-
 ### $ **whoami_**
 #### *palutz (aka Stefano)*
+<p>First of all, thank you for stopping by and welcome to my little website/blog.</p>
+&nbsp;  
 <p>I'm an Italian curious geek, polyglot developer, Agile practitioner, eager to learn new things, 
 and always trying to improve my own skills.</p>
 <p>I like to deal with different people, different ideas and trying to get the best from any situations.
