@@ -31,7 +31,7 @@ main =
         compile $ do
             posts <- recentFirst =<< loadAll pattern
             let ctx = constField "title" title
-                      `mappend` listField "posts" postCtx (return posts)
+                      `mappend` listField "posts" postContext (return posts)
                       `mappend` defaultContext
 
             makeItem ""
@@ -102,7 +102,7 @@ postContext =
   dateField "date" "%Y-%m-%d" `mappend` defaultContext
 
 postCtxWithTags :: Tags -> Context String
-postCtxWithTags tags = tagsField "tags" tags `mappend` postCtx
+postCtxWithTags tags = tagsField "tags" tags `mappend` postContext
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
