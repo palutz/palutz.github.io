@@ -22,13 +22,32 @@ main =
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
+    -- build up tags
+    tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+
+    tagsRules tags $ \tag pattern -> do
+        let title = "Posts tagged \"" ++ tag ++ "\""
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAll pattern
+            let ctx = constField "title" title
+                      `mappend` listField "posts" postContext (return posts)
+                      `mappend` defaultContext
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/tag.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
+    -- creating the posts
     match "posts/*" $ do
       route (setExtension "html")
       compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/post.html" postContext
+        >>= loadAndApplyTemplate "templates/post.html" (postCtxWithTags tags)
         >>= saveSnapshot "content"
-        >>= loadAndApplyTemplate "templates/default.html" postContext
+        >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
         >>= relativizeUrls
+
 
     create ["archive.html"] $ do
       route idRoute
@@ -82,12 +101,16 @@ postContext :: Context String
 postContext =
   dateField "date" "%Y-%m-%d" `mappend` defaultContext
 
+-- mapping the post Context with the generated tags
+postCtxWithTags :: Tags -> Context String
+postCtxWithTags tags = tagsField "tags" tags `mappend` postContext
+
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
   FeedConfiguration
-    { feedTitle = "Free thoughts on a leash..."
-    , feedDescription = "Palutz's blog"
-    , feedAuthorName = "Palutz"
+    { feedTitle = "Free thoughts on a leash"
+    , feedDescription = "palutz's blog"
+    , feedAuthorName = "palutz"
     , feedAuthorEmail = "stefano@pastesoft.com"
     , feedRoot = ""
     }
