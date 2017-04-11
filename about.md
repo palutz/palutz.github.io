@@ -14,6 +14,7 @@ Travelled quite a bit and lived in different countries, I worked with different 
 Other than my geek life, I enjoy spending time with my family, my dog(s), trying to teach coding to young people and… And what??? I still didn’t find a way to have 48hr day :-)
 
 I like sports and motorbike (I’m Italian, hence you will understand my love for Ducati), I’m vegetarian and interested in using the technologies to disrupt old businesses and/or improve our life, not just faster or, arguably, richer.
+
 > Use technologies to live better!
 
 #### ***Skills (and interestes...)***
