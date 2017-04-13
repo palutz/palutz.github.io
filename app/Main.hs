@@ -39,7 +39,7 @@ main =
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-
+    -- creating the posts
     match "posts/*" $ do
       route (setExtension "html")
       compile $ pandocCompiler
@@ -101,16 +101,16 @@ postContext :: Context String
 postContext =
   dateField "date" "%Y-%m-%d" `mappend` defaultContext
 
+-- mapping the post Context with the generated tags
 postCtxWithTags :: Tags -> Context String
 postCtxWithTags tags = tagsField "tags" tags `mappend` postContext
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
   FeedConfiguration
-    { feedTitle = "Free thoughts on a leash..."
-    , feedDescription = "Palutz's blog"
-    , feedAuthorName = "Palutz"
+    { feedTitle = "Free thoughts on a leash"
+    , feedDescription = "palutz's blog"
+    , feedAuthorName = "palutz"
     , feedAuthorEmail = "stefano@pastesoft.com"
     , feedRoot = ""
     }
-
