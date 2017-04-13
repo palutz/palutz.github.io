@@ -1,6 +1,5 @@
 # Palutz's blog (using Hakyll, the Haskell Jekyll)
 
-
 ## References
 
 ### Hakyll and Haskell
@@ -18,4 +17,3 @@
 
 [bootstrap]: http://getbootstrap.com/
 [bootstrap-blog]: http://getbootstrap.com/examples/blog/
-

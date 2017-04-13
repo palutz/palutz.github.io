@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Free thoughts on a leash...</title>
+    <link href="/atom.xml" rel="self" />
+    <link href="" />
+    <id>/atom.xml</id>
+    <author>
+        <name>Palutz</name>
+        <email>stefano@pastesoft.com</email>
+    </author>
+    <updated>Unknown</updated>
+    
+</feed>
