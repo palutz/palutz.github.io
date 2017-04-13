@@ -1,4 +1,13 @@
-body{font-family:Georgia, "Times New Roman", Times, serif;color:#555}
+@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #777777;
+  background-color: #ffffff;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{margin-top:0;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:normal;color:#333}
 
 @media (min-width:1200px){
@@ -133,6 +142,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{margin-top:0;font-family:"H
 }
 
 img.resize{
-   width:210px;
-   height:210px;
+   max-width:50%;
+   max-height:50%;
 }
