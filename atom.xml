@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Free thoughts on a leash...</title>
+    <title>Free thoughts on a leash</title>
     <link href="/atom.xml" rel="self" />
     <link href="" />
     <id>/atom.xml</id>
     <author>
-        <name>Palutz</name>
+        <name>palutz</name>
         <email>stefano@pastesoft.com</email>
     </author>
-    <updated>Unknown</updated>
+    <updated>2017-04-13T00:00:00Z</updated>
+    <entry>
+    <title>Bye bye Jekyll, welcome Hakyll</title>
+    <link href="/posts/2017-04-13-bye-bye-Jekyll.html" />
+    <id>/posts/2017-04-13-bye-bye-Jekyll.html</id>
+    <published>2017-04-13T00:00:00Z</published>
+    <updated>2017-04-13T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    Bye bye Jekyll, welcome Hakyll
+  </h2>
+  <p class="blog-post-meta">
+    Posted on April 13, 2017
     
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/blog.html">blog</a>, <a href="/tags/haskell.html">haskell</a>, <a href="/tags/github.html">github</a>
+    
+  </p>
+  <p><img class="resize" src="/images/haskell-logo.png" style="float: right; margin: 10px;" /></p>
+<p>It’s always difficult to properly start something and blogging make no exceptions at all.</p>
+<p>Ok, to be honest, I had some experiences on blogging (with not so much success… cough .. cough…), but I will try just a simpler and more straightforward approach here, where I will manage all as a bunch of notes from my experiences, my thoughts, most of the time a set of reminders about what I’ve learned and tryng to share them here with whoever has enough time to waste here.</p>
+<p>Without further ado… let’s just get it started!</p>
+<p>I’m blogging my rants on <a href="https://pages.github.com/">Github pages</a> a convenient, free, fast, lean, … { put your buzzwords here } … , hosted and maintained by <a href="https://github.com/">Github</a> one of the most famous platforms for developers and projects in general. One of the characteristics that help <em>Github pages</em> to stand up from other blog platforms, at least for me, is the simplicity and the support of static pages.</p>
+<p>What does it mean? To make it simple, you use some programs (will see after which ones) to create the web pages <em>EXACTLY</em> how they will be hosted and showed to your followers/colleagues/friends/…. and you can easily (sort of) check that on your computer before publishing, and you don’t need anything else, just upload the created page and it will work like thata.</p>
+<blockquote>
+<p>DISCLAIMER: yes it is easier, lighter and (IMHO) better, but it requires you to be a bit more geek than average, meaning you should be prepared to run some (really basic) scripts manually. If this is not your case, don’t worry, the web is full of platforms and websites that do this for you.</p>
+</blockquote>
+<p>So, what are <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://jaspervdj.be/hakyll/">Hakyll</a>?</p>
+<p>They are simply the programs that I was mentioning before, helping you to create your static page to manage your website with <em>Github pages</em>. <em>Jekyll</em> is based on <a href="https://www.ruby-lang.org/en/">Ruby</a>, a pretty famous programming language used a lot to make web applications, whilst <em>Hakyll</em> is based on <a href="https://www.haskell.org/">Haskell</a>, simply <em>THE <strong>functional</strong> language</em> :-) , despite the jokes the most famous <em>PURE</em> functional language.</p>
+<p>Now, you may ask, Why choosing Hakyll and dropping Jekyll ?</p>
+<p>And the answer is simple, it’s just a matter of my personal taste and:</p>
+<ul>
+<li>this is a blog where I (would) like to talk, also, about functional programming, hence choosing a functional language based platform looks more convenient</li>
+<li>(don’t kill me, personal taste) I’ve never been a huge fan of Ruby and its approach with a lot of “magic” and underneath computation. I like to be in control and with Ruby is a little bit tricky</li>
+<li>I wanted to play a bit more with Haskell (while working more with Scala and F#) so, again, when I’ve found this opportunity I thought it was worthing a try</li>
+</ul>
+<blockquote>
+<p>DISCLAIMER 2: If <em>Jekyll</em> is a bit geeky, <em>Hakyll</em> is a lot geekier, actually you need to have your hands quite dirty, you could need to modify (Haskell) code to generate your site, manually update and modify your template(s) (not so much pre-built templates for <em>Hakyll</em> as you may have for <em>Jekyll</em>) and so on. On top of that,<em>Github pages</em> have direct support for <em>Jekyll</em>, so we have to do some tricks to use <em>Hakyll</em>. This is what I wanted, something a little bit more simple that gives me more control and maybe a way to learn something more.</p>
+</blockquote>
+</div>
+]]></summary>
+</entry>
+
 </feed>

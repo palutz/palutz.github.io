@@ -1,17 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
-    xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <channel>
-        <title>Free thoughts on a leash</title>
-        <link></link>
-        <description><![CDATA[palutz's blog]]></description>
-        <atom:link href="/rss.xml" rel="self"
-                   type="application/rss+xml" />
-        <lastBuildDate>Thu, 13 Apr 2017 00:00:00 UT</lastBuildDate>
-        <item>
-    <title>Bye bye Jekyll, welcome Hakyll</title>
-    <link>/posts/2017-04-13-bye-bye-Jekyll.html</link>
-    <description><![CDATA[<div class="blog-post">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Palutz's Blog - Bye bye Jekyll, welcome Hakyll</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-blog.css">
+
+</head>
+
+<body>
+	<div class="blog-masthead">
+		<div class="container">
+			<nav class="blog-nav">
+				<a class="blog-nav-item" href="../">Home</a>
+				<a class="blog-nav-item" href="../about.html">About</a>
+				<a class="blog-nav-item" href="../archive.html">Archive</a>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="blog-header">
+			<h1 class="blog-title">Free thoughts on a leash...</h1>
+			<p class="lead blog-description">
+				"Simple" notes from my "always in beta" mind
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 blog-main">
+				<div class="blog-post">
   <h2 class="blog-post-title">
     Bye bye Jekyll, welcome Hakyll
   </h2>
@@ -23,10 +45,10 @@
   </p>
   <p class="blog-post-meta">
     
-    Tags: <a href="/tags/blog.html">blog</a>, <a href="/tags/haskell.html">haskell</a>, <a href="/tags/github.html">github</a>
+    Tags: <a href="../tags/blog.html">blog</a>, <a href="../tags/haskell.html">haskell</a>, <a href="../tags/github.html">github</a>
     
   </p>
-  <p><img class="resize" src="/images/haskell-logo.png" style="float: right; margin: 10px;" /></p>
+  <p><img class="resize" src="../images/haskell-logo.png" style="float: right; margin: 10px;" /></p>
 <p>It’s always difficult to properly start something and blogging make no exceptions at all.</p>
 <p>Ok, to be honest, I had some experiences on blogging (with not so much success… cough .. cough…), but I will try just a simpler and more straightforward approach here, where I will manage all as a bunch of notes from my experiences, my thoughts, most of the time a set of reminders about what I’ve learned and tryng to share them here with whoever has enough time to waste here.</p>
 <p>Without further ado… let’s just get it started!</p>
@@ -48,11 +70,47 @@
 <p>DISCLAIMER 2: If <em>Jekyll</em> is a bit geeky, <em>Hakyll</em> is a lot geekier, actually you need to have your hands quite dirty, you could need to modify (Haskell) code to generate your site, manually update and modify your template(s) (not so much pre-built templates for <em>Hakyll</em> as you may have for <em>Jekyll</em>) and so on. On top of that,<em>Github pages</em> have direct support for <em>Jekyll</em>, so we have to do some tricks to use <em>Hakyll</em>. This is what I wanted, something a little bit more simple that gives me more control and maybe a way to learn something more.</p>
 </blockquote>
 </div>
-]]></description>
-    <pubDate>Thu, 13 Apr 2017 00:00:00 UT</pubDate>
-    <guid>/posts/2017-04-13-bye-bye-Jekyll.html</guid>
-    <dc:creator>palutz</dc:creator>
-</item>
 
-    </channel>
-</rss>
+			</div>
+			<!-- ### SIDEBAR ### -->
+			<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About</h4>
+					<p>I'm just a curious geek.</p>
+					<p>If you are really interested you could read more <a href="../about.html">here</a></p>
+				</div>
+				<!-- 
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+						<li><a href="#">June 2015</a></li>
+					</ol>
+				</div>
+				-->
+				<div class="sidebar-module">
+					<h4>Me |> Social </h4>
+					<ol class="list-unstyled">
+						<li><a href="https://github.com/palutz" target="_blank">My GitHub repository</a></li>
+						<li><a href="https://bitbucket.org/palutz/" target="_blank">My Bitbucket repository</a></li>
+						<li><a href="https://twitter.com/palutz" target="_blank">My Twitter</a></li>
+						<li><a href="https://about.me/stefanop" target="_blank">My About.me page</a></li>
+						<li><a href="https://github.com/pastesoft" target="_blank">Pastesoft's Github repository</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<a href="../atom.xml">Atom</a> - <a href="../rss.xml">RSS</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="blog-footer">
+		<p>
+			Site proudly generated by
+			<a href="http://jaspervdj.be/hakyll" target="_blank">Hakyll</a>
+		</p>
+	</footer>
+
+</body>
+
+</html>
