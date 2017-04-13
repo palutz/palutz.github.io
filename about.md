@@ -20,13 +20,13 @@ I like sports and motorbike (I’m Italian, hence you will understand my love fo
 #### ***Skills (and interestes...)***
 ##### *PS: this list is always* __under construction__  ;-) 
 <ul class="skill-list">
-  <li>Functional Languages (F#, Scala, Haskell, ...)</li>
+  <li>Functional Languages ([F#](http://fsharp.org/), [Scala](http://www.scala-lang.org/), [Haskell](https://www.haskell.org/), ...)</li>
   <li>Blockchain, Bitcoin, cryptography</li>
   <li>Decentralized Applications</li>
   <li>Scalable and distributed systems</li>
   <li>API design</li>
   <li>Architecture, Web and Cloud</li>
-  <li>.Net (specially the open source version, <3 dotnet core)</li>
+  <li>.Net (specially the open source version, <3 [dotnet core](https://dotnet.github.io/))</li>
   <li>Git, distributed VCS, Team Working</li>
   <li>Machine Learning and Artificial Intelligence</li>
   <li>Data, Databases (SQL, NoSQL, distributed) and storages
