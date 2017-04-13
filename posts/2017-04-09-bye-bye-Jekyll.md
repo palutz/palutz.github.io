@@ -1,9 +1,8 @@
 ---
 title: Bye bye Jekyll, welcome Hakyll
 author: palutz
+tags: blog, haskell, github
 ---
-
-#Bye bye Jekyll, welcome Hakyll 
 
 It's always difficult to properly start something and blogging make no exceptions at all.
 

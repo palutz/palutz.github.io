@@ -93,17 +93,23 @@ main =
                    =<< loadAllSnapshots "posts/*" "content"
         renderRss feedConfiguration feedContext posts
 
-feedContext :: Context String
-feedContext =
-  postContext `mappend` bodyField "description"
+
+--------------------------------------------------------------------------
 
 postContext :: Context String
 postContext =
-  dateField "date" "%Y-%m-%d" `mappend` defaultContext
+  dateField "date" "%B %e, %Y" `mappend`
+  defaultContext
 
 -- mapping the post Context with the generated tags
 postCtxWithTags :: Tags -> Context String
-postCtxWithTags tags = tagsField "tags" tags `mappend` postContext
+postCtxWithTags tags = 
+  tagsField "tags" tags `mappend`
+  postContext
+
+feedContext :: Context String
+feedContext =
+  postContext `mappend` bodyField "description"
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
