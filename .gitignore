@@ -18,3 +18,5 @@ cabal.sandbox.config
 
 _cache/
 _site/
+
+*.swp
