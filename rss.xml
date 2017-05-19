@@ -7,8 +7,37 @@
         <description><![CDATA[palutz's blog]]></description>
         <atom:link href="/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 13 Apr 2017 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Fri, 19 May 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Make functions great again</title>
+    <link>/posts/2017-05-19-Make-functions-great-again.html</link>
+    <description><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    Make functions great again
+  </h2>
+  <p class="blog-post-meta">
+    Posted on May 19, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/functional%20programming.html">functional programming</a>, <a href="/tags/community.html">community</a>
+    
+  </p>
+  <p><img src="https://palutz.github.io/introToFunctional/images/makefunctions2.jpg" style="margin: 6px;" width=600 /></p>
+<p>After sometimes, I came back to provide a technical talk.</p>
+<p>This time it was my first talk about <em>functional programming</em> , with a particular set up: first, an introductory part focused on the concepts behind the <em>functional programming paradigm</em> and then a fast exploration of <a href="http://fsharp.org">F#</a> , an excellent language, mature, OSS and functional first finally getting the traction it deserves (IMHO).</p>
+<p>In this post, I will just share my slides for the first part, since the second one was almost all code, leveraging the very nice tools open source and community driven that we can use while working with F#: dotnet core, Visual Studio Code and Ionide. I will try to wrap up also the second part in a better presentation.</p>
+<p>Meanwhile, I hope you will enjoy my introductory <a href="https://palutz.github.io/introToFunctional/">presentation</a></p>
+</div>
+]]></description>
+    <pubDate>Fri, 19 May 2017 00:00:00 UT</pubDate>
+    <guid>/posts/2017-05-19-Make-functions-great-again.html</guid>
+    <dc:creator>palutz</dc:creator>
+</item>
+<item>
     <title>Bye bye Jekyll, welcome Hakyll</title>
     <link>/posts/2017-04-13-bye-bye-Jekyll.html</link>
     <description><![CDATA[<div class="blog-post">
