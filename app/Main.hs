@@ -3,6 +3,7 @@
 module Main (main) where
 
 import Data.Monoid (mappend)
+import Data.Monoid ((<>))
 import Hakyll
 
 main :: IO ()
