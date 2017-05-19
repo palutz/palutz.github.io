@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 dist
 cabal-dev
 *.o
@@ -18,3 +17,5 @@ cabal.sandbox.config
 
 _cache/
 _site/
+
+*.swp
