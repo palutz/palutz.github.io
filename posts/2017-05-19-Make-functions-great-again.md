@@ -6,7 +6,7 @@ tags: functional programming, community
 
 <img src="https://palutz.github.io/introToFunctional/images/makefunctions2.jpg" style="margin: 6px;" width=600 />
 
-After sometimes, I came back to provide a technical talk.
+After some time, I came back to provide a technical talk.
 
 This time it was my first talk about *functional programming* , with a particular set up: first, an introductory part focused on the concepts behind the *functional programming paradigm* and then a fast exploration of [F#](http://fsharp.org) , an excellent language, mature, OSS and functional first finally getting the traction it deserves (IMHO).
 
