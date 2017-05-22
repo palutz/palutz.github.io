@@ -1,12 +1,13 @@
 ---
 title: My first Blockchain interview
 author: palutz
-tags: interview, blockchain, book
+tags: interview, blockchain, bitcoin
 ---
 
 <img src="https://palutz.github.io/images/blockchain.png" style="margin: 6px;" width=600 />
 
-Few days ago I was sharing my talk about [intro to functional programming](./2017-05-19-Make-functions-great-again.html), and today, with a perfect timing, they just published my first interview about my other passion/focus nowadays: distributed (decentralized actually) systems, in particular DLT (Distributed Ledger Technologies) got from my love for Bitcoin.
+
+A few days ago I was sharing my talk about [intro to functional programming](./2017-05-19-Make-functions-great-again.html), and today, with a perfect timing, they just published my first interview about my other passion/focus nowadays: distributed (decentralised actually) systems, in particular, DLT (Distributed Ledger Technologies) got from my love for Bitcoin.
 
 I have to apology in advance: I was pretty ill that day, so my crappy English got even worst.
 
