@@ -8,8 +8,37 @@
         <name>palutz</name>
         <email>stefano@pastesoft.com</email>
     </author>
-    <updated>2017-05-19T00:00:00Z</updated>
+    <updated>2017-05-22T00:00:00Z</updated>
     <entry>
+    <title>My first Blockchain interview</title>
+    <link href="/posts/2017-05-22-My-first-blockchain-interview.html" />
+    <id>/posts/2017-05-22-My-first-blockchain-interview.html</id>
+    <published>2017-05-22T00:00:00Z</published>
+    <updated>2017-05-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    My first Blockchain interview
+  </h2>
+  <p class="blog-post-meta">
+    Posted on May 22, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/interview.html">interview</a>, <a href="/tags/blockchain.html">blockchain</a>, <a href="/tags/book.html">book</a>
+    
+  </p>
+  <p><img src="https://palutz.github.io/introToFunctional/images/blockchain.png" style="margin: 6px;" /></p>
+<p>Few days ago I was sharing my talk about <a href="./2017-05-19-Make-functions-great-again.html">intro to functional programming</a>, and today, with a perfect timing, they just published my first interview about my other passion/focus nowadays: distributed (decentralized actually) systems, in particular DLT (Distributed Ledger Technologies) got from my love for Bitcoin.</p>
+<p>I have to apology in advance: I was pretty ill that day, so my crappy English got even worst.</p>
+<p>I hope you will enjoy what I was trying to say more than how I said it. If so, maybe you will enjoy even more the book where me, alongside other amazing Blockchain early adopters, we share our thoughts about the future of the Blockchain.</p>
+<p>You can find my <a href="https://blockchainbillionspodcast.com/">Blockchain billions</a> interview <a href="https://blockchainbillionspodcast.com/2017/05/22/stefano-paluello/">here</a> and here more info about the <a href="https://blockchainbillionspodcast.com/book/">book</a></p>
+</div>
+]]></summary>
+</entry>
+<entry>
     <title>Make functions great again</title>
     <link href="/posts/2017-05-19-Make-functions-great-again.html" />
     <id>/posts/2017-05-19-Make-functions-great-again.html</id>
