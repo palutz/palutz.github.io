@@ -3,6 +3,7 @@
 module Main (main) where
 
 import Data.Monoid (mappend)
+import Data.Monoid ((<>))
 import Hakyll
 
 main :: IO ()
@@ -16,7 +17,8 @@ main =
       route idRoute
       compile compressCssCompiler
 
-    match (fromList ["about.md", "contact.md"]) $ do
+    -- match (fromList ["about.md", "contact.md"]) $ do
+    match (fromList ["about.md"]) $ do
       route (setExtension "html")
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -39,7 +41,7 @@ main =
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-
+    -- creating the posts
     match "posts/*" $ do
       route (setExtension "html")
       compile $ pandocCompiler
@@ -66,12 +68,12 @@ main =
     match "index.html" $ do
       route idRoute
       compile $ do
-        posts <- recentFirst =<< loadAll "posts/*"
+        posts <- fmap (take 3) . recentFirst =<< loadAll "posts/*"
         let indexContext =
-              listField "posts" postContext (return posts) `mappend`
-              constField "title" "Home" `mappend`
+              listField "posts" postContext (return posts) <>
+              field "tags" (\_ -> renderTagList tags) <>
               defaultContext
-
+              
         getResourceBody
           >>= applyAsTemplate indexContext
           >>= loadAndApplyTemplate "templates/default.html" indexContext
@@ -93,16 +95,23 @@ main =
                    =<< loadAllSnapshots "posts/*" "content"
         renderRss feedConfiguration feedContext posts
 
-feedContext :: Context String
-feedContext =
-  postContext `mappend` bodyField "description"
+
+--------------------------------------------------------------------------
 
 postContext :: Context String
 postContext =
-  dateField "date" "%Y-%m-%d" `mappend` defaultContext
+  dateField "date" "%B %e, %Y" `mappend`
+  defaultContext
 
+-- mapping the post Context with the generated tags
 postCtxWithTags :: Tags -> Context String
-postCtxWithTags tags = tagsField "tags" tags `mappend` postContext
+postCtxWithTags tags = 
+  tagsField "tags" tags `mappend`
+  postContext
+
+feedContext :: Context String
+feedContext =
+  postContext `mappend` bodyField "description"
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration =
@@ -113,4 +122,3 @@ feedConfiguration =
     , feedAuthorEmail = "stefano@pastesoft.com"
     , feedRoot = ""
     }
-

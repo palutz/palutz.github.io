@@ -1,4 +1,4 @@
-# My personal blog based on hakyll (Haskell Jekyll)
+# Palutz's blog (using Hakyll, the Haskell Jekyll)
 
 ## References
 
