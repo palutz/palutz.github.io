@@ -4,7 +4,7 @@ author: palutz
 tags: Blockchain, Distributed Ledger, Bitcoin, Ethereum, cryptography
 ---
 
-<img src="https://www.journalofaccountancy.com/content/dam/cgma/magazine/news/blockchain-819.jpg" style="margin: 6px;" width=300 />
+<img src="https://www.journalofaccountancy.com/content/dam/cgma/magazine/news/blockchain-819.jpg" style="margin: 6px;" width=600 />
 
 
 In the attached post I'm sharing the slides of my talk at [Blockchain-now conference](www.blockchain-now.com).
