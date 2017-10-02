@@ -1,13 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Free thoughts on a leash...</title>
+    <title>Free thoughts on a leash</title>
     <link href="/atom.xml" rel="self" />
     <link href="" />
     <id>/atom.xml</id>
     <author>
-        <name>Palutz</name>
+        <name>palutz</name>
         <email>stefano@pastesoft.com</email>
     </author>
-    <updated>Unknown</updated>
+    <updated>2017-10-02T00:00:00Z</updated>
+    <entry>
+    <title>Introducing Blockchian to your CEO</title>
+    <link href="/posts/2017-10-02-Introducing-Blockchain-to-your-CEO.html" />
+    <id>/posts/2017-10-02-Introducing-Blockchain-to-your-CEO.html</id>
+    <published>2017-10-02T00:00:00Z</published>
+    <updated>2017-10-02T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    Introducing Blockchian to your CEO
+  </h2>
+  <p class="blog-post-meta">
+    Posted on October  2, 2017
     
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/Blockchain.html">Blockchain</a>, <a href="/tags/Distributed%20Ledger.html">Distributed Ledger</a>, <a href="/tags/Bitcoin.html">Bitcoin</a>, <a href="/tags/Ethereum.html">Ethereum</a>, <a href="/tags/cryptography.html">cryptography</a>
+    
+  </p>
+  <p><img src="https://www.journalofaccountancy.com/content/dam/cgma/magazine/news/blockchain-819.jpg" style="margin: 6px;" width=600 /></p>
+<p>In the attached post I’m sharing the slides of my talk at <a href="www.blockchain-now.com">Blockchain-now conference</a>. My talk was focused on trying to explain the <strong><em>Blockchain</em></strong> to not technical people. Please, don’t hesitate to share your feedback. https://steemit.com/blockchain/<span class="citation">@palutz/introducing-blockchain-to-you-boss</span></p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Playing with F# and SkaiSharp on Xamarin</title>
+    <link href="/posts/2017-06-20-Playing-with-fsharp-and-SkiaSharp-on-Xamarin.html" />
+    <id>/posts/2017-06-20-Playing-with-fsharp-and-SkiaSharp-on-Xamarin.html</id>
+    <published>2017-06-20T00:00:00Z</published>
+    <updated>2017-06-20T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    Playing with F# and SkaiSharp on Xamarin
+  </h2>
+  <p class="blog-post-meta">
+    Posted on June 20, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/fsharp.html">fsharp</a>, <a href="/tags/functional.html">functional</a>, <a href="/tags/mobile.html">mobile</a>, <a href="/tags/SkiaSharp.html">SkiaSharp</a>, <a href="/tags/Drawing.html">Drawing</a>, <a href="/tags/Xamarin.html">Xamarin</a>
+    
+  </p>
+  <p><img src="https://palutz.github.io/images/skia-logo.png" style="margin: 6px;" width=600 /></p>
+<p>This is time I’m trying to use F# with <a href="https://github.com/mono/SkiaSharp">SkiaSharp</a> the .Net wrapper of the nice <a href="https://skia.org/">Skia Library</a> a 2D Graphic Library from Google, in <a href="https://xamarin.com">Xamrin</a> more precisely with <a href="https://developer.xamarin.com/guides/xamarin-forms">Xamarin Forms</a>, a cross-platform framework to easily develop native mobile application on iOS, Android and other platforms.</p>
+<p>Despite it looks like Xamarin and Microsoft decided to drop the support for F# with Xamarin Forms, I think there is a lot of potential on using a functional languages, and in this case F#, to create also client application, thanks to the domain oriented code you can produce easier wuth a language like F# (not to mention, using a F#’s feature like <strong><em>mailbox processor</em></strong></p>
+<p>Please take a look at the code and bear in mind is just a little trial. <a href="https://github.com/palutz/trySkiaSharp">TrySkiaSharp on github</a></p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>My first Blockchain interview</title>
+    <link href="/posts/2017-05-22-My-first-blockchain-interview.html" />
+    <id>/posts/2017-05-22-My-first-blockchain-interview.html</id>
+    <published>2017-05-22T00:00:00Z</published>
+    <updated>2017-05-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    My first Blockchain interview
+  </h2>
+  <p class="blog-post-meta">
+    Posted on May 22, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/interview.html">interview</a>, <a href="/tags/blockchain.html">blockchain</a>, <a href="/tags/bitcoin.html">bitcoin</a>
+    
+  </p>
+  <p><img src="https://palutz.github.io/images/blockchain.png" style="margin: 6px;" width=600 /></p>
+<p>A few days ago I was sharing my talk about <a href="./2017-05-19-Make-functions-great-again.html">intro to functional programming</a>, and today, with a perfect timing, they just published my first interview about my other passion/focus nowadays: distributed (decentralised actually) systems, in particular, DLT (Distributed Ledger Technologies) got from my love for Bitcoin.</p>
+<p>I have to apology in advance: I was pretty ill that day, so my crappy English got even worst.</p>
+<p>I hope you will enjoy what I was trying to say more than how I said it. If so, maybe you will enjoy even more the book where me, alongside other amazing Blockchain early adopters, we share our thoughts about the future of the Blockchain.</p>
+<p>You can find my <a href="https://blockchainbillionspodcast.com/">Blockchain billions</a> interview <a href="https://blockchainbillionspodcast.com/2017/05/22/stefano-paluello/">here</a> and here more info about the <a href="https://blockchainbillionspodcast.com/book/">book</a></p>
+<p><img src="https://blockchainbillions.files.wordpress.com/2016/12/blockchain_cover_image_10282016.jpg" style="margin: 6px;" width=300 /></p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Make functions great again</title>
+    <link href="/posts/2017-05-19-Make-functions-great-again.html" />
+    <id>/posts/2017-05-19-Make-functions-great-again.html</id>
+    <published>2017-05-19T00:00:00Z</published>
+    <updated>2017-05-19T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    Make functions great again
+  </h2>
+  <p class="blog-post-meta">
+    Posted on May 19, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/functional%20programming.html">functional programming</a>, <a href="/tags/community.html">community</a>
+    
+  </p>
+  <p><img src="https://palutz.github.io/introToFunctional/images/makefunctions2.jpg" style="margin: 6px;" width=600 /></p>
+<p>After some time, I came back to provide a technical talk.</p>
+<p>This time it was my first talk about <em>functional programming</em> , with a particular set up: first, an introductory part focused on the concepts behind the <em>functional programming paradigm</em> and then a fast exploration of <a href="http://fsharp.org">F#</a> , an excellent language, mature, OSS and functional first finally getting the traction it deserves (IMHO).</p>
+<p>In this post, I will just share my slides for the first part, since the second one was almost all code, leveraging the very nice tools open source and community driven that we can use while working with F#: dotnet core, Visual Studio Code and Ionide. I will try to wrap up also the second part in a better presentation.</p>
+<p>Meanwhile, I hope you will enjoy my introductory <a href="https://palutz.github.io/introToFunctional/">presentation</a></p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Bye bye Jekyll, welcome Hakyll</title>
+    <link href="/posts/2017-04-13-bye-bye-Jekyll.html" />
+    <id>/posts/2017-04-13-bye-bye-Jekyll.html</id>
+    <published>2017-04-13T00:00:00Z</published>
+    <updated>2017-04-13T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="blog-post">
+  <h2 class="blog-post-title">
+    Bye bye Jekyll, welcome Hakyll
+  </h2>
+  <p class="blog-post-meta">
+    Posted on April 13, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="/tags/blog.html">blog</a>, <a href="/tags/haskell.html">haskell</a>, <a href="/tags/github.html">github</a>
+    
+  </p>
+  <p><img class="resize" src="/images/haskell-logo.png" style="float: right; margin: 10px;" /></p>
+<p>It’s always difficult to properly start something and blogging make no exceptions at all.</p>
+<p>Ok, to be honest, I had some experiences on blogging (with not so much success… cough .. cough…), but I will try just a simpler and more straightforward approach here, where I will manage all as a bunch of notes from my experiences, my thoughts, most of the time a set of reminders about what I’ve learned and tryng to share them here with whoever has enough time to waste here.</p>
+<p>Without further ado… let’s just get it started!</p>
+<p>I’m blogging my rants on <a href="https://pages.github.com/">Github pages</a> a convenient, free, fast, lean, … { put your buzzwords here } … , hosted and maintained by <a href="https://github.com/">Github</a> one of the most famous platforms for developers and projects in general. One of the characteristics that help <em>Github pages</em> to stand up from other blog platforms, at least for me, is the simplicity and the support of static pages.</p>
+<p>What does it mean? To make it simple, you use some programs (will see after which ones) to create the web pages <em>EXACTLY</em> how they will be hosted and showed to your followers/colleagues/friends/…. and you can easily (sort of) check that on your computer before publishing, and you don’t need anything else, just upload the created page and it will work like thata.</p>
+<blockquote>
+<p>DISCLAIMER: yes it is easier, lighter and (IMHO) better, but it requires you to be a bit more geek than average, meaning you should be prepared to run some (really basic) scripts manually. If this is not your case, don’t worry, the web is full of platforms and websites that do this for you.</p>
+</blockquote>
+<p>So, what are <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://jaspervdj.be/hakyll/">Hakyll</a>?</p>
+<p>They are simply the programs that I was mentioning before, helping you to create your static page to manage your website with <em>Github pages</em>. <em>Jekyll</em> is based on <a href="https://www.ruby-lang.org/en/">Ruby</a>, a pretty famous programming language used a lot to make web applications, whilst <em>Hakyll</em> is based on <a href="https://www.haskell.org/">Haskell</a>, simply <em>THE <strong>functional</strong> language</em> :-) , despite the jokes the most famous <em>PURE</em> functional language.</p>
+<p>Now, you may ask, Why choosing Hakyll and dropping Jekyll ?</p>
+<p>And the answer is simple, it’s just a matter of my personal taste and:</p>
+<ul>
+<li>this is a blog where I (would) like to talk, also, about functional programming, hence choosing a functional language based platform looks more convenient</li>
+<li>(don’t kill me, personal taste) I’ve never been a huge fan of Ruby and its approach with a lot of “magic” and underneath computation. I like to be in control and with Ruby is a little bit tricky</li>
+<li>I wanted to play a bit more with Haskell (while working more with Scala and F#) so, again, when I’ve found this opportunity I thought it was worthing a try</li>
+</ul>
+<blockquote>
+<p>DISCLAIMER 2: If <em>Jekyll</em> is a bit geeky, <em>Hakyll</em> is a lot geekier, actually you need to have your hands quite dirty, you could need to modify (Haskell) code to generate your site, manually update and modify your template(s) (not so much pre-built templates for <em>Hakyll</em> as you may have for <em>Jekyll</em>) and so on. On top of that,<em>Github pages</em> have direct support for <em>Jekyll</em>, so we have to do some tricks to use <em>Hakyll</em>. This is what I wanted, something a little bit more simple that gives me more control and maybe a way to learn something more.</p>
+</blockquote>
+</div>
+]]></summary>
+</entry>
+
 </feed>

@@ -1,11 +1,113 @@
-<p>&lt;img src=”https://palutz.github.io/images/skia-logo.png” style=”margin: 6px;” width=300 /&gt;</p>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Palutz's Blog - Playing with F# and SkaiSharp on Xamarin</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-blog.css">
+
+</head>
+
+<body>
+	<!-- web analytics.. -->
+	<script type="text/javascript">
+		var clicky_site_ids = clicky_site_ids || [];
+		clicky_site_ids.push(101023335);
+		(function() {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = '//static.getclicky.com/js';
+			( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+		})();
+	</script>
+	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101023335ns.gif" /></p></noscript>
+	<!-- End web analytics.. -->
+	<div class="blog-masthead">
+		<div class="container">
+			<nav class="blog-nav">
+				<a class="blog-nav-item" href="../">Home</a>
+				<a class="blog-nav-item" href="../about.html">About</a>
+				<a class="blog-nav-item" href="../archive.html">Archive</a>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="blog-header">
+			<h1 class="blog-title">Free thoughts on a leash...</h1>
+			<p class="lead blog-description">
+				"Simple" notes from my "always in beta" mind
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 blog-main">
+				<div class="blog-post">
+  <h2 class="blog-post-title">
+    Playing with F# and SkaiSharp on Xamarin
+  </h2>
+  <p class="blog-post-meta">
+    Posted on June 20, 2017
+    
+      by palutz
+    
+  </p>
+  <p class="blog-post-meta">
+    
+    Tags: <a href="../tags/fsharp.html">fsharp</a>, <a href="../tags/functional.html">functional</a>, <a href="../tags/mobile.html">mobile</a>, <a href="../tags/SkiaSharp.html">SkiaSharp</a>, <a href="../tags/Drawing.html">Drawing</a>, <a href="../tags/Xamarin.html">Xamarin</a>
+    
+  </p>
+  <p><img src="https://palutz.github.io/images/skia-logo.png" style="margin: 6px;" width="600" /></p>
 <p>This is time I’m trying to use F# with <a href="https://github.com/mono/SkiaSharp">SkiaSharp</a> the .Net wrapper of the nice <a href="https://skia.org/">Skia Library</a> a 2D Graphic Library from Google, in <a href="https://xamarin.com">Xamrin</a> more precisely with <a href="https://developer.xamarin.com/guides/xamarin-forms">Xamarin Forms</a>, a cross-platform framework to easily develop native mobile application on iOS, Android and other platforms.</p>
+<p>Despite it looks like Xamarin and Microsoft decided to drop the support for F# with Xamarin Forms, I think there is a lot of potential on using a functional languages, and in this case F#, to create also client application, thanks to the domain oriented code you can produce easier wuth a language like F# (not to mention, using a F#’s feature like <strong><em>mailbox processor</em></strong></p>
+<p>Please take a look at the code and bear in mind is just a little trial. <a href="https://github.com/palutz/trySkiaSharp">TrySkiaSharp on github</a></p>
+</div>
 
-<p>Reading the technologies listed, one legitimate question could be a simple… WHY?
-Ok this is a joke, but actually if you tried some of the techologies listed together you could had some similar feeling.
-I’m not saying Xamarin Forms is not a good framework (the opposite, it’s pretty good especially if you need a typical application spread over different systems and devices) and also SkiaSharp looks like a pretty nice and good implementation of the famous and powerful Skia library (just to mention, it’s the library working as the drawing engine for Google Chrome, ChromeOS, Mozilla Firefox and FirefoxOS and so on).</p>
+			</div>
+			<!-- ### SIDEBAR ### -->
+			<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About</h4>
+					<p>I'm just a curious geek.</p>
+					<p>If you are really interested you could read more <a href="../about.html">here</a></p>
+				</div>
+				<!-- 
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+						<li><a href="#">June 2015</a></li>
+					</ol>
+				</div>
+				-->
+				<div class="sidebar-module">
+					<h4>Me |> Social </h4>
+					<ol class="list-unstyled">
+						<li><a href="https://github.com/palutz" target="_blank">My GitHub repository</a></li>
+						<li><a href="https://bitbucket.org/palutz/" target="_blank">My Bitbucket repository</a></li>
+						<li><a href="https://twitter.com/palutz" target="_blank">My Twitter</a></li>
+						<li><a href="https://about.me/stefanop" target="_blank">My About.me page</a></li>
+						<li><a href="https://github.com/pastesoft" target="_blank">Pastesoft's Github repository</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<a href="../atom.xml">Atom</a> - <a href="../rss.xml">RSS</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<p>The problem could be how all these things match with F#.</p>
+	<footer class="blog-footer">
+		<p>
+			Site proudly generated by
+			<a href="http://jaspervdj.be/hakyll" target="_blank">Hakyll</a>
+		</p>
+	</footer>
 
-<p>As I mentioned before I’m more keen to fucntional languages so, for me, F# make more sense if I have to develop a solution in .Net (and yes .Net is not anymore “only” Windows). The problem is the weird behaviour of Microsoft on supporting this quite nice language at the moment: trying to do some Xamarin code on mobile with F# is a bit more difficult (to be polite) than using C#. And it shouldn’t be… really. The syntax and the constructs that you can leverage with F# should lead you to a cleaner and better code than with C#, since a lot of behavior are actually enforced by the language and the compiler</p>
+</body>
+
+</html>
