@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/img/favicon.ico">
+<meta charset="utf-8">
+<meta http-equiv=\"refresh\" content=\"0; url=/\" /> \
+<title>Steo's blog :: Introduction to Scheme/Racket</title>
+<link rel="stylesheet" href="/public/css/styles.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+  <div class="primary">
+    <h2><a href="/">
+      <!-- <img src="/public/images/logo.svg" width="50" /> -->
+      Free thoughts on a leash
+    </a></h2>
+  </div>
+  <div class="secondary">
+      <nav>
+    <a href="/" class="button start"><span>Home</span></a>
+    <a href="/blog" class="button docs"><span>Blog</span></a>
+    <a href="/resources" class="button news"><span>Resources</span></a>
+    <a href="/code" class="button contrib"><span>Code</span></a>
+    <a href="/about" class="button help"><span>About</span></a>
+  </nav>
+
+  </div>
+</div>
+
+    </header>
+    <main>
+      <p>In my previous <a href="/posts/2018-11-22-Little-Typer-study-group.html" target="_blank">post</a> I've introduced the new study group I recently joined with the focus on type theory and dependent types using "The Little Typer" book as a nice introduction to the subject.</p>
+<p>In this post, I will try to share some notes about Scheme using the book <a href="https://mitpress.ublish.com/book/little-schemer" target="_blank">The Little Schemer</a> as a reference, as we are using in the study group.</p>
+<p>Let's get the (coding) party started!</p>
+<h3>Defining an atom</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">; Define atom(s) ... and yes, this is a comment in Scheme/Racket
+</span><span style="color:#c0c5ce;">λ. hello  ; you can write it &#39;hello or (hello) depending on your &quot;dialect&quot;
+</span><span style="color:#c0c5ce;">λ. 123
+</span><span style="color:#c0c5ce;">λ. *qwe$
+</span><span style="color:#c0c5ce;">λ. (atominsideparentheses)
+</span><span style="color:#c0c5ce;">λ. (this is a collection of atom)
+</span></code></pre>
+<p>I think when using a collection of atoms and atoms the confusion could arise. At least for me.</p>
+<p>Let's see how can we use collections (and S-Expressions) in Scheme.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">λ. (this is a list)
+</span><span style="color:#c0c5ce;">λ. (thisand a S-Expression)  ; all lists are S-Expressions
+</span><span style="color:#c0c5ce;">λ. sexpression    ; all atoms are S-Expressions
+</span><span style="color:#c0c5ce;">λ. (this is a list)    ; a collection of S-Expressions enclosed by parentheses
+</span><span style="color:#c0c5ce;">λ. ((another) list with (((a different) format)))
+</span></code></pre>
+<h3>Introducing car and cdr (primitives for <em>not empty</em> lists)</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">; before that: better trying to introduce *define*
+</span><span style="color:#c0c5ce;">λ. (define a 1)   ; bind the value on the left to the value on the right
+</span><span style="color:#c0c5ce;">λ. (eval a)
+</span><span style="color:#c0c5ce;">1
+</span><span style="color:#c0c5ce;">λ. (define l (list 1 2 3))
+</span><span style="color:#c0c5ce;">λ. (eval l)
+</span><span style="color:#c0c5ce;">&#39;(1 2 3)   ; mark the tick.. it&#39;s a faster way to define
+</span><span style="color:#c0c5ce;">λ. (define ll &#39;(4 5 6))
+</span><span style="color:#c0c5ce;">λ. (eval ll)
+</span><span style="color:#c0c5ce;">&#39;(4 5 6)
+</span><span style="color:#c0c5ce;">λ. (car l)
+</span><span style="color:#c0c5ce;">1
+</span><span style="color:#c0c5ce;">λ. (cdr l)
+</span><span style="color:#c0c5ce;">&#39;(2 3)
+</span></code></pre>
+<p>Ok.. I hope this didn't scare you. If you are familiar with lists (or cons list, or linked list) in other languages this might look familiar, despite the fact  that more modern languages use a more expressive syntax like head and tail, where <em>car =&gt; head</em> and <em>cdr =&gt; tail</em></p>
+<h3>Functions...</h3>
+<p>Now that we defined our symbols, collections and introduced some basic functions, how do we define our own function? Instead of the usual useless examples, let's try to create a function that checks if the code is an atom. This could be useful since the concept of atom is sometimes a bit confusing</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">λ. (define atom?
+</span><span style="color:#c0c5ce;">      (lambda(x)
+</span><span style="color:#c0c5ce;">        (and (not (pair? x)) (not (null? x)))))
+</span></code></pre>
+<p>Here we can spot some pattern and understand how Scheme/Racket define a function.</p>
+<p>First of all, please note the parentheses: everything needs to be included in parenthesis to define something. The rest is pretty straightforward:</p>
+<ul>
+<li>the first row defines the name of the block (function) we are declaring</li>
+<li>the keyword lambda defines a (lambda) function with, in this case, one parameter called x</li>
+<li>the actual code of the function simply uses two standard library functions to check that x is not null or not a pair (we will come back to this later, when talking about collections and lists).</li>
+</ul>
+<p>The syntax is pretty typical Lisp-like with (a lot of) parentheses.</p>
+<h3>... and recursive functions</h3>
+<p>Now that we saw how to define a function, we can try to define a recursive function. Recursive functions are a typical way to loop in a functional language: instead of creating a while or a for loop, we use recursive function. This could push us to have a different approach but for now is pretty easy.</p>
+<p>How can we define our (recursive) function to calculate the length of a collection?</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">λ. (define myLength
+</span><span style="color:#c0c5ce;">    (lambda (x)
+</span><span style="color:#c0c5ce;">      (cond
+</span><span style="color:#c0c5ce;">        ((null? x) 0)
+</span><span style="color:#c0c5ce;">        (else (+ 1 (myLength (cdr x)))))))
+</span></code></pre>
+<p>I think here the particular part is the one related to the keyword cond. Think of it as a switch case in another language or a more compact way to check different predicates. We will check that later.</p>
+<p>The function is pretty simple: check if the parameter received (supposed to be a list) is null, and if so return 0, otherwise add 1 to the recursive call of the myLenght function over the remaining part of the list (cdr x)</p>
+<h3>The cond keyword</h3>
+<p>Let's examine the cond construct because it's something we will use a lot in our code.
+The construct looks something like this:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">...
+</span><span style="color:#c0c5ce;">  (cond
+</span><span style="color:#c0c5ce;">    ((condition1) action1)
+</span><span style="color:#c0c5ce;">    ((condition2) action2)
+</span><span style="color:#c0c5ce;">    ...
+</span><span style="color:#c0c5ce;">    ((conditionn) actionn)
+</span><span style="color:#c0c5ce;">  )
+</span></code></pre>
+<p>In this construct, the conditions are evaluated in a sequential way. If one condition is matched, the related action is executed and all the remaining branches (conditions + actions) are skipped. If no condition is matched, the statement returns null.</p>
+<p>I hope I didn't scare or bore you too much. This was supposed to be a short introduction to this language. I think with these few examples we have enough tools to start playing with it. In this <a href="https://github.com/palutz/LittleTyperStudyGroup" target="_blank" >github repo</a> I will try to keep track of my experiments.</p>
+<p>Happy (λ) coding!</p>
+
+    </main>
+    <footer>
+      <div class="inner">
+  <div class="primary">
+    <h2><a href="/">
+      <!-- <img src="/public/images/logo.svg" width="50" /> -->
+      Free thoughts on a leash
+    </a></h2>
+  </div>
+  <div class="secondary">
+      <nav>
+    <a href="/" class="button start"><span>Home</span></a>
+    <a href="/blog" class="button docs"><span>Blog</span></a>
+    <a href="/resources" class="button news"><span>Resources</span></a>
+    <a href="/code" class="button contrib"><span>Code</span></a>
+    <a href="/about" class="button help"><span>About</span></a>
+  </nav>
+
+  </div>
+</div>
+
+    </footer>
+  </body>
+</html>
