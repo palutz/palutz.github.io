@@ -1,0 +1,17 @@
+---
+---
+<section class="introduction">
+<div class="inner">
+	<h2>Archive</h2>
+   {% for post in collections.posts.pages %}
+    <div>
+		<tr>
+			<td><time pubdate="pubdate">{{ post.published_date | date:"%a&nbsp;%d&nbsp;%b&nbsp;%Y" }}</time></td>
+			<td><b> -  </b></td>
+			<td><b><a href="{{ post.permalink }}">{{ post.title }}</a></b></td>
+	  	</tr>
+    </div>
+
+   {% endfor %}
+</div>
+</section>
