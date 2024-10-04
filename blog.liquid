@@ -1,0 +1,29 @@
+---
+---
+<section class="introduction">
+<div class="inner">
+	<h2>Blog</h2>
+	<!-- <div>
+		{% assign all_tags = collections.posts.pages | map: "tags" %}
+		{% for t in all_tags %}
+			<div>
+				- {{ t }}
+			</div>
+		{% endfor %}
+	</div> -->
+	<div>
+ 		{% for post in collections.posts.pages offset: 8 %}
+			<div>
+	           	<!-- <time pubdate="pubdate">{{ post.published_date | date:"%a&nbsp;%d&nbsp;%b&nbsp;%Y" }}</time> -->
+	           	<time pubdate="pubdate">{{ post.published_date | date:"%d&nbsp;%b&nbsp;%Y" }}</time>
+				<b>&nbsp;&nbsp;&nbsp;</b>
+	        	<b><a href="{{ post.permalink }}">{{ post.title }}</a></b>
+		    </div>
+			<div><p></p></div>
+		{% endfor %}
+	</div>
+	<div class="inner">
+		<div><p></p></div>
+		<td><b><a href="/archive">Want to read some old posts? (Archive)</a></b></td>
+	</div>
+</section>
