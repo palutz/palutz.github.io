@@ -1,24 +1,27 @@
 ---
-permalink: /
-title: Stefano's virtual space
+title: "Free thoughts..."
+layout: default.liquid
+data:
+  route: blog
 ---
-<section class="introduction">
-  <div class="inner">
-    <h1 class="top_margin">Stefano's virtual space</h1>
-    <div class="columns three">
-      <article>
-        <h3>Blog</h3>
-		<p>A scattered collections of unleashed thoughts</p>
+{% assign idx = 0 %}
+{% for post in collections.posts.pages %}
+  {% if idx < 5 %}
+    {% assign post_year = post.published_date | date:"%Y" %}
+    {% if post_year > 2023 %}
+      <article class="blog-list">
+        <div class="left">
+          <img src={{post.data.image}} class="corner avi-image"/>
+        </div>
+        <div class="right">
+          <time pubdate="pubdate">{{ post.published_date | date:"%d&nbsp;%b&nbsp;%Y" }}</time>
+          <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
+          <!-- <p>{{ post.content | strip_html | truncatewords: 11, '...' }}</p>-->
+        </div>
       </article>
-      <article>
-        <h3>Resources</h3>
-        <p>Practically everything else: </p>
-		<p> talks, papers, books, ...</p>
-      </article>
-      <article>
-        <h3>Code</h3>
-        <p>Link to my code repositories</p>
-      </article>
-    </div>
-  </div>
-</section>%
+    {% endif %}
+  {% endif %}
+{% assign idx = idx | plus: 1 %}
+{% endfor %}
+
+Looking for more posts? Check out the <a href="/archive/">archive</a>!
