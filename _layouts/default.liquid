@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include "head.liquid" %}
+    {% include "_head.liquid" %}
   </head>
-  <body>
-    <header>
-      {% include "header.liquid" %}
-    </header>
-    <main class="flex_main">
-      {{ page.content }}
-    </main>
-    <footer>
-      {% include "footer.liquid" %}
-    </footer>
-  </body>
+<body data-route={{ page.data.route }}>
+  {% include "_menu.liquid" %}
+  <main>
+    {{ page.content }}
+  </main>
+  {% include "_footer.liquid" %}
+</body>
 </html>
