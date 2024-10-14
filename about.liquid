@@ -1,15 +1,20 @@
 ---
+permalink: /about/
+title: About
+layout: default.liquid
+data:
+  route: about
 ---
-<section class="introduction">
-<div class="inner">
+<img class="me-image corner" src="/img/me.png" />
 
-   {% for post in collections.posts.pages %}
-    <div>
-      <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-      {% if post.description != "" %}<p>{{ post.description }}</p>{% elsif post.excerpt %}<p>{{ post.excerpt }}</p>{% else %}<br />{% endif %}
-      <time pubdate="pubdate">{{ post.published_date | date:"%a&nbsp;%d&nbsp;%b&nbsp;'%y" }}</time>
-    </div>
+<h1>Ciao!</h1>
 
-   {% endfor %}
-</div>
-</section>
+<p>
+Hi there, my name is Stefano.<br />
+Just another Italian geek going around the Web, and the World.
+</p>
+
+<p class="clearfix">
+<img class="about-icon" src="/img/cobalt.svg" />
+This blog is powered by <a href="https://www.rust-lang.org/" target="_blank">Rust</a> using <a href="https://cobalt-org.github.io/" target="_blank">Cobalt</a> and based on <a href="https://booya.github.io" target="_blank">Booya</a>'s template with some modification that I've written/will write about.
+</p>
